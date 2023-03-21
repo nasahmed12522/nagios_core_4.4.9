@@ -13,3 +13,4 @@ Post Installation Tasks
 6. Create and define time periods
 7. Create required directories under /usr/local/nagios and add to nagios.cfg
 8. Create service groups
+9. Install and configure pnp4nagios for graphs
