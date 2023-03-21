@@ -1,9 +1,9 @@
-# nagios_core_4.4.9
+# Nagios_Core_4.4.9
 
 
 
 
-Post Installation Tasks
+# Post Installation Tasks
 
 1. Create below configuration first then continue
 2. Create contacts and contact groups
