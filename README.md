@@ -1,6 +1,7 @@
 # Nagios_Core_4.4.9
 
-
+Verify the Nagios config-
+/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 
 
 # Post Installation Tasks
