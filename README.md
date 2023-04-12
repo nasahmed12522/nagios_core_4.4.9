@@ -1,6 +1,6 @@
 # Nagios_Core_4.4.9
 
-Verify the Nagios config-
+Verify the Nagios config run the following command-
 /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 
 
