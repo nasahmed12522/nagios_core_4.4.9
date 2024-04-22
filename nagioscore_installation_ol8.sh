@@ -24,8 +24,8 @@ usermod -aG nagcmd apache
 ## Change directory path into extracted package and installation
 
 cd /tmp/nagios_core_4.4.9/
-tar xzf nagios-4.4.9.tar.gz; tar xzf nagios-plugins.tar.gz; tar xzf nagios-plugins-2.3.3.tar.gz 
-cd /tmp/nagios_core_4.4.9/nagios-4.4.9/
+tar xzf nagios-4.5.1.tar.gz; tar xzf nagios-plugins.tar.gz; tar xzf nagios-plugins-2.4.9.tar.gz 
+cd /tmp/nagios_core_4.4.9/nagios-4.5.1/
 ./configure --with-command-group=nagcmd
 make all
 make install
@@ -50,7 +50,7 @@ systemctl enable nagios
 ## Verify the Nagios config
 /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 
-cd /tmp/nagios_core_4.4.9/nagios-plugins-2.3.3
+cd /tmp/nagios_core_4.4.9/nagios-plugins-2.4.9
 
 ./configure --with-nagios-user=nagios --with-nagios-group=nagcmd
 make
@@ -62,7 +62,7 @@ cd /usr/local/nagios/libexec/
 ls
 
 service nagios restart
-cd /tmp/nagios_core_4.4.9/nagios-plugins-release-2.3.3/
+cd /tmp/nagios_core_4.4.9/nagios-plugins-2.4.9/
 ./tools/setup
 chown nagios:nagcmd /usr/local/nagios/var/rw/
 chown nagios:nagcmd /usr/local/nagios/var/rw/nagios.cmd
